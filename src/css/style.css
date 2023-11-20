@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main {
     display: flex;
     justify-content: center;
@@ -179,3 +180,61 @@ main section:hover {
         margin-bottom: 44px;
     }
 }
+=======
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+:root{
+    --esquerda:26px;
+    --baixo:5px;
+    --botton:43px;
+}
+.pinturas{
+    width: 335px;
+    height: 431px;
+    position: relative;
+   
+}
+.pinturas img{
+   
+    width: 305px;
+    height: 431px;
+    transition: 0.8s;
+    border-radius: 10px;
+   
+}
+.informacoes{
+    position: absolute;
+    bottom: 0;
+    margin-left: var(--esquerda);
+}
+.informacoes h2{
+    margin-bottom: var(--baixo);
+}
+.informacoes h3{
+    margin-bottom: var(--botton);
+}
+.pinturas img:hover{
+    
+    transition: 0.5s;
+    width: 335px;
+    height: 431px;
+    position: relative;
+    align-items: center;
+}
+
+@media (max-width:688px ){
+    .rome{
+        margin-top: 45px;
+    }
+    .starry{
+        padding-bottom: 44px;
+    }
+}
+>>>>>>> 768063f (atualizando o codigo)
