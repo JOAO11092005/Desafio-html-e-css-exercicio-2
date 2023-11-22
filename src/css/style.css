@@ -6,6 +6,13 @@ main{
     height: 100vh;
     gap: 20px;
     flex-wrap: wrap;
+
+    /* display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
   .container img{
    border-radius: 10px;
@@ -29,16 +36,47 @@ main{
 .descricao h2{
     margin-bottom: 5px;
 }
+.container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .message {
+    visibility: hidden;
+    width: 335px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    /* bottom: -0px; */
+    text-align: justify;
+    left: 50%;
+   transform: translateX(-50%);
+  }
+    
+    
+    
+  
+  .container:hover .message {
+    visibility: visible;
+    transition: 0.5s;
+  }
+  
 
-@media (max-width:687px){
+@media (max-width:1399px){
     main{
-        gap: 10px;
+        /* gap: 10px; */
     }
     .rome{
         padding-top: 45px;
     }
     .starry{
-       padding-bottom: 35px;
+       /* padding-bottom: 35px; */
+    }
+    .message {
+        bottom: 0;
     }
 }
  
